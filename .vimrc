@@ -7,7 +7,7 @@ let g:syntastic_warning_symbol = "!"
 "set t_Co=256
 "let g:Powerline_symbols = "fancy"
 
-set cursorcolumn
+"set cursorcolumn
 set cursorline
 set number            " line 표시를 해줍니다.
 set ai                    " auto index
@@ -24,16 +24,13 @@ set nocompatible   " 방향키로 이동가능
 "set fileencodings=utf-8,euc-kr    " 파일인코딩 형식 지정
 "set bs=indent,eol,start    " backspace 키 사용 가능
 "set history=1000    " 명령어에 대한 히스토리를 1000개까지
-"set ruler              " 상태표시줄에 커서의 위치 표시
-"set nobackup      " 백업파일을 만들지 않음
 set title               " 제목을 표시
 set showmatch    " 매칭되는 괄호를 보여줌
-"set nowrap         " 자동 줄바꿈 하지 않음
 set wmnu           " tab 자동완성시 가능한 목록을 보여줌
 
 syntax on        " 문법 하이라이트 킴"
 set mouse=a
-
+colorscheme jellybeans
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -42,9 +39,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'scrooloose/syntastic'
-	
+	Plugin 'Valloric/YouCompleteMe'
 	Plugin 'davidhalter/jedi-vim'
-	Plugin 'ervandew/supertab'
+"	Plugin 'ervandew/supertab'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'mattn/emmet-vim'
 "	Plugin 'scrooloose/nerdtree'
